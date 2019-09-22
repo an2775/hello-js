@@ -1,0 +1,27 @@
+{
+  "name": "hello",
+  "version": "1.0.0",
+  "description": "test project for js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"./hode_modules/.binstatic-server"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/an2775/hello-js.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Andriy",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/an2775/hello-js/issues"
+  },
+  "homepage": "https://github.com/an2775/hello-js#readme",
+  "devDependencies": {
+    "static-server": "^2.2.1"
+  }
+}
