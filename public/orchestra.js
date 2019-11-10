@@ -1,43 +1,27 @@
-
-function playS (id){
-   const audio = document.getElementById(id);
-   audio.currentTime = 0;
-   audio.play();
+function playS ( kc ){
+const audio = document.querySelector('audio[data-key="' + kc +'"]');
+const divkey = document.querySelector( 'div[data-key="' + kc + '"]');
+if(!audio) {return;}
+if(!divkey) {return;}
+audio.currentTime = 0;
+audio.play();
+divkey.className = 'active';
 }
-function clears(id){
-    const divkey = document.getElementByid('k'+id);
-    divkey.className = '';
+function clearS ( kc ){
+const divkey = document.querySelector('div[data-key="' + kc + '"]');
+if(!divkey) { return;}
+divkey.className='';
+
 }
-//
-function myKeysDw(e) {
-    switch (e.keyCode){
-        case 65: playS ('sound01');
-        break;
-       case 83:playS('sound02');
-       break;
-       case 72:
-        default: console.log(e);
-        break;
+function myKeysDw( e ){
+play5( e.keyCode );
 
-    }
+
 }
+function myKeysUp( e ){
+clearS( e.keyCode )
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
