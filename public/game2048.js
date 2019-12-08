@@ -23,6 +23,9 @@ function drawBoard(){
         
         
         }
+let cl = 'c-' +board[r][c];
+elBoard[ i ].className = cl;
+
         }
         
         
@@ -30,7 +33,115 @@ function drawBoard(){
 
 }
 
+
+
+function mover( a ){
+//[0,0,0,0]
+for (let c=0;c<boardSize-1;c++ ){
+    if (a[ c ]==0){
+        let cNe0 = -1;
+        for (let cR=c+1; cR<boardSize;cR++){
+            if(a[cR] >0){
+                cNe0=cR;
+                break;
+            }
+
+        }
+    }
+
+    if(cNe0 !=-1){
+        a [c]=a [cNeo]
+        a[cNeo]=0;
+        }
+}
+function onKey( e ) {
+
+ switch (e.keyCode){
+case 37:mvLeft();break
+case 38:mvUp();break
+case 39:mvRight();break
+case 40:mvDown();break
+
+ } 
+nextNumber();
+nextNumber();
 drawBoard();
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+function gameRnd() {
+    let r = Math.random
+    if ( r>0.9){
+        return 4;
+    }else {
+        return 2;
+    }
+}
+
+function getZeros(){
+    let a = [];
+    for (let r=0; c<boardSize;r++){
+        for (let c=0; c<boardSize;c++){
+            if (board[ r ][ c ]==0){
+                a.push([ r,c ]);
+            }
+
+        }
+        return a;
+                }
+        
+function nextNumber(){
+let a = getZeros();
+let n = a.leght;
+let i = Math.floor ( n * Math.random() );
+if (n >=                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         )
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // 1)[0,0,0,0]
 // 2)всі клітинки без останньої
