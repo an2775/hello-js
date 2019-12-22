@@ -4,15 +4,24 @@ border-collapse: collapse;
 background-image: url("images/bg-box.jpeg");
 background-repeat: no-repeat;
 background-position: center center ;
-
+background-size: cover;
 
 }
 td {
-
-
-
+    border:1px solid white;
+    width: 80px;
+    height: 80;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     
 }
+
+td.box-01{
+    background-image: url('images/box01.png');
+}
+
 
 
 
