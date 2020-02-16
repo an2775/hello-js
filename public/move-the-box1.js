@@ -33,24 +33,10 @@ if (board[r][c]>0){
 
 }
 }
-function moveLeft
+function moveLeft.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
+ 
 
